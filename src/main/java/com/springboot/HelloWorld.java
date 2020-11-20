@@ -10,4 +10,15 @@ public class HelloWorld {
     public String index() {
         return "HELLO WORLD!!!";
     }
+
+    @RequestMapping("/profile")
+    public String profile() {
+        return "This is the logged in profile page";
+    }
+
+    @RequestMapping("/test")
+    public int[] test() {
+        return new int[] {1, 2, 3, 7};
+        //genuinely curious if this will work
+    }
 }
