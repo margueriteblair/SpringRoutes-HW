@@ -1,5 +1,9 @@
 package com.springboot;
 
+
+import org.springframework.stereotype.Component;
+
+@Component
 public class Laptop {
     private int lid;
     private String brand;
@@ -18,5 +22,14 @@ public class Laptop {
 
     public void setLid(int lid) {
         this.lid = lid;
+    }
+
+    @Override
+    public String toString() {
+        return "Laptop lid=" + lid + ", brand= " + brand;
+    }
+
+    public void compile() {
+        System.out.println("Compiling");
     }
 }

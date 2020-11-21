@@ -5,11 +5,12 @@ import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
-@Scope(value="prototype")
+@Scope(value="")
 public class Alien {
     private int aid;
     private String aname;
     private String tech;
+    private Laptop laptop;
 
     public Alien() {
         super();
@@ -40,7 +41,15 @@ public class Alien {
         return tech;
     }
 
+    public Laptop getLaptop() {
+        return laptop;
+    }
+
+    public void setLaptop(Laptop laptop) {
+        this.laptop = laptop;
+    }
     public void show() {
         System.out.println("In show");
+        laptop.compile();
     }
 }
