@@ -9,6 +9,11 @@ public class Alien {
     private String aname;
     private String tech;
 
+    public Alien() {
+        super();
+        System.out.println("Object created");
+    }
+
     public void setAid(int aid) {
         this.aid = aid;
     }
