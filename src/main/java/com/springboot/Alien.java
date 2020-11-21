@@ -28,4 +28,8 @@ public class Alien {
     public String getTech() {
         return tech;
     }
+
+    public void show() {
+        System.out.println("In show");
+    }
 }
