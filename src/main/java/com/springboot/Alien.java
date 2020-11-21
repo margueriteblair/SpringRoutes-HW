@@ -1,5 +1,9 @@
 package com.springboot;
 
+
+import org.springframework.stereotype.Component;
+
+@Component
 public class Alien {
     private int aid;
     private String aname;

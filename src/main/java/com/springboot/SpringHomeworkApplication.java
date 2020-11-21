@@ -9,6 +9,7 @@ public class SpringHomeworkApplication {
 
 	public static void main(String[] args) {
 		ConfigurableApplicationContext context = SpringApplication.run(SpringHomeworkApplication.class, args);
+		//configures the container
 		Alien a = context.getBean(Alien.class);
 		a.show();
 	}
